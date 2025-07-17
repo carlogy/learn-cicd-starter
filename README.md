@@ -1,5 +1,3 @@
-![Test Status](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
-
 # learn-cicd-starter (Notely)
 
 ![Test Status](https://github.com/carlogy/learn-cicd-starter/actions/workflows/ci.yaml/badge.svg)
