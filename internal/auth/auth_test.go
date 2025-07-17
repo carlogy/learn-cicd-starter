@@ -33,7 +33,7 @@ func TestNoAuthHeader(t *testing.T) {
 
 	_, err := GetAPIKey(header)
 
-	if err.Error() == "no authorization header included" {
+	if err.Error() != "no authorization header included" {
 		t.Errorf("Received unexpected err:\t%v", err.Error())
 	}
 }
