@@ -29,6 +29,12 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 		w.WriteHeader(500)
 		return
 	}
-	w.WriteHeader(code)
-	w.Write(dat)
+
+	result, err := w.Write(dat)
+	if err != nil {
+		log.Printf("Error writing data")
+		w.WriteHeader(result)
+		return
+	}
+	w.WriteHeader(result)
 }
